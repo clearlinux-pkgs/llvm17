@@ -1,0 +1,21 @@
+# This file contains additional build requirements that did not get
+# picked up automatically. One name per line, no whitespace.
+SPIRV-Tools
+Sphinx
+Z3-dev
+Z3-dev32
+binutils-dev
+elfutils-dev
+googletest-dev
+libffi-dev
+libffi-dev32
+libstdc++-dev
+libxml2-dev32
+ncurses-dev
+ninja
+python3-dev
+rsync
+swig
+valgrind-dev
+zlib-dev
+zlib-dev32
