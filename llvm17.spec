@@ -10,7 +10,7 @@
 %define keepstatic 1
 Name     : llvm17
 Version  : 17.0.6
-Release  : 190
+Release  : 191
 URL      : https://github.com/llvm/llvm-project/releases/download/llvmorg-17.0.6/llvm-project-17.0.6.src.tar.xz
 Source0  : https://github.com/llvm/llvm-project/releases/download/llvmorg-17.0.6/llvm-project-17.0.6.src.tar.xz
 Source1  : https://github.com/KhronosGroup/SPIRV-Headers/archive/refs/tags/vulkan-sdk-1.3.268.0.tar.gz
@@ -23,7 +23,7 @@ License  : Apache-2.0 BSD-3-Clause ISC MIT MPL-2.0 NCSA
 Requires: llvm17-bin = %{version}-%{release}
 Requires: llvm17-lib = %{version}-%{release}
 Requires: llvm17-license = %{version}-%{release}
-Requires: llvm-dev = %{version}-%{release}
+Requires: llvm17-dev = %{version}-%{release}
 BuildRequires : SPIRV-Tools
 BuildRequires : Sphinx
 BuildRequires : Vulkan-Headers-dev Vulkan-Loader-dev Vulkan-Tools
@@ -180,7 +180,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1726525956
+export SOURCE_DATE_EPOCH=1726617267
 unset LD_AS_NEEDED
 pushd llvm
 mkdir -p clr-build
@@ -255,7 +255,7 @@ FFLAGS="$CLEAR_INTERMEDIATE_FFLAGS"
 FCFLAGS="$CLEAR_INTERMEDIATE_FCFLAGS"
 ASFLAGS="$CLEAR_INTERMEDIATE_ASFLAGS"
 LDFLAGS="$CLEAR_INTERMEDIATE_LDFLAGS"
-export SOURCE_DATE_EPOCH=1726525956
+export SOURCE_DATE_EPOCH=1726617267
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/llvm17
 cp %{_builddir}/SPIRV-Headers-vulkan-sdk-1.3.268.0/LICENSE %{buildroot}/usr/share/package-licenses/llvm17/9a84200f47e09abfbde1a6b25028460451b23d03 || :
