@@ -1,1 +1,0 @@
-llvm17-staticdev = %{version}-%{release}

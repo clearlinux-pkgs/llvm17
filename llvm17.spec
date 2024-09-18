@@ -7,10 +7,9 @@
 #
 # Source0 file verified with key 0x44F2485E45D59042 (tobias@hieta.se)
 #
-%define keepstatic 1
 Name     : llvm17
 Version  : 17.0.6
-Release  : 191
+Release  : 192
 URL      : https://github.com/llvm/llvm-project/releases/download/llvmorg-17.0.6/llvm-project-17.0.6.src.tar.xz
 Source0  : https://github.com/llvm/llvm-project/releases/download/llvmorg-17.0.6/llvm-project-17.0.6.src.tar.xz
 Source1  : https://github.com/KhronosGroup/SPIRV-Headers/archive/refs/tags/vulkan-sdk-1.3.268.0.tar.gz
@@ -91,7 +90,6 @@ Requires: llvm17-lib = %{version}-%{release}
 Requires: llvm17-bin = %{version}-%{release}
 Provides: llvm17-devel = %{version}-%{release}
 Requires: llvm17 = %{version}-%{release}
-Requires: llvm17-staticdev = %{version}-%{release}
 
 %description dev
 dev components for the llvm17 package.
